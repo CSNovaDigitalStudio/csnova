@@ -125,6 +125,37 @@ body {
   color: #050816;
 }
 
+/* HERO BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn,
+  .hero-buttons .btn-outline {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+}
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+  padding: 16px 0;
+  font-size: 1rem;
+}
 /* TRUST STRIP */
 .trust {
   display: flex;

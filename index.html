@@ -15,6 +15,20 @@
 
 <canvas id="particles"></canvas>
 
+<!-- PREVIEW MODAL -->
+<div id="previewModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:2000;">
+  
+  <button onclick="closePreview()" 
+          style="position:absolute; top:20px; right:20px; padding:10px 15px;">
+    Close
+  </button>
+
+  <iframe id="previewFrame"
+          style="width:90%; height:90%; margin:5% auto; display:block; border:none; border-radius:10px;">
+  </iframe>
+
+</div>
+
 <div class="space-glow"></div>
 
   <!-- NAVBAR -->
@@ -270,7 +284,7 @@
           <h3>Business Website</h3>
           <p>Ideal for companies and professional service providers.</p>
           <div class="template-actions">
-            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Plumbing-Template-2/')">Live Preview</button>
+            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Plumbing-Template-2/')">Live Preview</button>
           </div>
         </div>
 
@@ -279,7 +293,7 @@
           <h3>Service Website</h3>
           <p>Perfect for plumbers, electricians, and freelancers.</p>
           <div class="template-actions">
-            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Consulting-Template-1/')">Live Preview</button>
+            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Consulting-Template-1/')">Live Preview</button>
           </div>
         </div>
 
@@ -288,7 +302,7 @@
           <h3>Personal Brand</h3>
           <p>Showcase yourself and your work professionally.</p>
           <div class="template-actions">
-            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Construction-Template-1/')">Live Preview</button>
+            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Construction-Template-1/')">Live Preview</button>
           </div>
         </div>
 
@@ -354,13 +368,13 @@
     <div class="cards">
       <div class="card review">
         <p>⭐⭐⭐⭐⭐</p>
-        <p>"Simple process and great communication. The results exceeded expectations."</p>
-        <span>- Business Owner</span>
+        <p>"Wow very much touched, I love the design"</p>
+        <span>- Thilivhali Sibara</span>
       </div>
       <div class="card review">
         <p>⭐⭐⭐⭐⭐</p>
-        <p>"Professional, structured, and delivered on time. Highly recommended."</p>
-        <span>- Local Client</span>
+        <p>"Love it, very awesome."</p>
+        <span>- Chris </span>
       </div>
     </div>
   </section>
