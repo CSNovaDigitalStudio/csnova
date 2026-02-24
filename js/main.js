@@ -206,4 +206,9 @@ function payWithPaystack(amount){
   handler.openIframe();
 }
 
+function selectPackage(name, price) {
+  localStorage.setItem("selectedPackageName", name);
+  localStorage.setItem("selectedPackagePrice", price);
+}
+
 

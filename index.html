@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<a href="#core" class="floating-cta">Start at R500</a>
+<a href="#core" class="floating-cta">View Packages</a>
 
 <canvas id="particles"></canvas>
 
@@ -45,7 +45,7 @@
 
     <nav id="navMenu">
       <a href="#services">Services</a>
-      <a href="#templates">Templates</a>
+      <a href="#templates">Layouts</a>
       <a href="#about">About</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact" class="btn">Get Started</a>
@@ -56,15 +56,14 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-visual">
-        <h1>Structured Digital Systems That Help Your Business Scale</h1>
+        <h1>Professional Websites for South African Service & Local Businesses</h1>
         <p>
-          CS Nova Digital Studio builds growth-driven digital systems designed to 
-          improve visibility, increase revenue, automate operations, and prepare 
-          businesses for long-term expansion.
+        We build clean, mobile-friendly websites that help your business attract 
+        more calls, more WhatsApp messages, and more customers.
         </p>
         <div class="hero-buttons">
-          <a href="#contact" class="btn">Start Your Project</a>
-          <a href="#templates" class="btn-outline">View Templates</a>
+          <a href="#core" class="btn">View Website Packages</a>
+          <a href="#portfolio" class="btn-outline">See Live Examples</a>
         </div>
       </div>
     </div>
@@ -77,6 +76,58 @@
     <span>✔ Automation Ready</span>
     <span>✔ SEO & Visibility</span>
     <span>✔ Long-Term Partnership</span>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About CS Nova</h2>
+      <p>
+        CS Nova Digital Studio is a growth-focused digital development company 
+        operating as a private company. We build structured digital systems — not just websites.
+      </p>
+      <p>
+        We believe a business should improve in every aspect when it goes online:
+        visibility, conversion, operational efficiency, and scalability.
+      </p>
+      <p>
+        Using websites as the foundation, we partner with businesses to guide continuous 
+        digital growth — ensuring technology becomes a practical system for measurable progress.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section">
+    <div class="container">
+      <h2>Featured Live Websites</h2>
+      <p>A selection of structured systems built by CS Nova Digital Studio.</p>
+
+      <div class="cards portfolio-grid">
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/plumbing.png" alt="">
+          <h3>Just Plumbing Solutions</h3>
+          <a href="https://justplumbingsolutions.netlify.app/" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/sakhiksasa.png" alt="">
+          <h3>Sakhiksasa Foundation</h3>
+          <a href="https://sakhiksasafoundation.org/" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/onthego.png" alt="">
+          <h3>On The Go Construction</h3>
+          <a href="https://www.onthegoconstruction.co.za" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+      </div>
+
+      <br>
+      <a href="portfolio.html" class="btn">View Full Portfolio (50+)</a>
+    </div>
   </section>
 
   <!-- SERVICES -->
@@ -151,8 +202,7 @@
           <li>✔ Delivery in 48–72 hours</li>
         </ul>
 
-        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R500%20Starter%20Launch%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
-           class="btn">Start Now</a>
+        <a href="layouts.html" class="btn" onclick="selectPackage('Starter Launch', 'R500')">Select Layout</a>
       </div>
 
 
@@ -178,8 +228,7 @@
           <li>✔ Delivery in 3–5 days</li>
         </ul>
 
-        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R800%20Professional%20Presence%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
-           class="btn">Choose This</a>
+        <a href="layouts.html" class="btn" onclick="selectPackage('Professional Presence', 'R800')">Select Layout</a>
       </div>
 
 
@@ -203,8 +252,7 @@
           <li>✔ Delivery in 5–7 days</li>
         </ul>
 
-        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R1500%20Business%20Authority%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
-           class="btn">Build My Website</a>
+        <a href="layouts.html" class="btn" onclick="selectPackage('Business Authority', 'R1,500')">Select Layout</a>
       </div>
 
     </div>
@@ -270,114 +318,31 @@
   </div>
 </section>
 
-
-  <!-- TEMPLATES -->
-  <section id="templates" class="section dark">
-    <div class="container">
-      <h2>Website Templates</h2>
-      <p>Choose from professionally designed templates available for live preview.</p>
-
-      <div class="cards templates-grid">
-
-        <div class="template-card">
-          <img src="assets/templates/business.png" alt="Business Website Template">
-          <h3>Business Website</h3>
-          <p>Ideal for companies and professional service providers.</p>
-          <div class="template-actions">
-            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Plumbing-Template-2/')">Live Preview</button>
-          </div>
-        </div>
-
-        <div class="template-card">
-          <img src="assets/templates/service.png" alt="Service Website Template">
-          <h3>Service Website</h3>
-          <p>Perfect for plumbers, electricians, and freelancers.</p>
-          <div class="template-actions">
-            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Consulting-Template-1/')">Live Preview</button>
-          </div>
-        </div>
-
-        <div class="template-card">
-          <img src="assets/templates/personal.png" alt="Personal Brand Template">
-          <h3>Personal Brand</h3>
-          <p>Showcase yourself and your work professionally.</p>
-          <div class="template-actions">
-            <button onclick="openPreview('https://csnovadigitalstudio.github.io/Construction-Template-1/')">Live Preview</button>
-          </div>
-        </div>
-
-      </div>
+<!-- REVIEWS -->
+<section id="reviews" class="section dark">
+  <h2>Client Feedback</h2>
+  <div class="cards">
+    <div class="card review">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Wow very much touched, I love the design"</p>
+      <span>- Thilivhali Sibara</span>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About CS Nova</h2>
-      <p>
-        CS Nova Digital Studio is a growth-focused digital development company 
-        operating as a private company. We build structured digital systems — not just websites.
-      </p>
-      <p>
-        We believe a business should improve in every aspect when it goes online:
-        visibility, conversion, operational efficiency, and scalability.
-      </p>
-      <p>
-        Using websites as the foundation, we partner with businesses to guide continuous 
-        digital growth — ensuring technology becomes a practical system for measurable progress.
-      </p>
+    <div class="card review">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Love it, very awesome."</p>
+      <span>- Chris </span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PORTFOLIO -->
-  <section class="section">
-    <div class="container">
-      <h2>Featured Live Websites</h2>
-      <p>A selection of structured systems built by CS Nova Digital Studio.</p>
 
-      <div class="cards portfolio-grid">
+  
 
-        <div class="portfolio-card">
-          <img src="assets/portfolio/plumbing.png" alt="">
-          <h3>Just Plumbing Solutions</h3>
-          <a href="https://justplumbingsolutions.netlify.app/" target="_blank" class="btn">Visit Website</a>
-        </div>
 
-        <div class="portfolio-card">
-          <img src="assets/portfolio/sakhiksasa.png" alt="">
-          <h3>Sakhiksasa Foundation</h3>
-          <a href="https://sakhiksasafoundation.org/" target="_blank" class="btn">Visit Website</a>
-        </div>
 
-        <div class="portfolio-card">
-          <img src="assets/portfolio/onthego.png" alt="">
-          <h3>On The Go Construction</h3>
-          <a href="https://www.onthegoconstruction.co.za" target="_blank" class="btn">Visit Website</a>
-        </div>
 
-      </div>
 
-      <br>
-      <a href="portfolio.html" class="btn">View Full Portfolio (50+)</a>
-    </div>
-  </section>
 
-  <!-- REVIEWS -->
-  <section id="reviews" class="section dark">
-    <h2>Client Feedback</h2>
-    <div class="cards">
-      <div class="card review">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p>"Wow very much touched, I love the design"</p>
-        <span>- Thilivhali Sibara</span>
-      </div>
-      <div class="card review">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p>"Love it, very awesome."</p>
-        <span>- Chris </span>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
