@@ -628,20 +628,7 @@ body::after {
   background: rgba(123,47,247,0.2);
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
 
-  .meter-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .meter-right {
-    position: sticky;
-    top: 80px;
-    order: -1;
-    margin-bottom: 40px;
-  }
-}
 
 .meter-checklist strong {
   display: block;
@@ -760,38 +747,27 @@ body::after {
 /* METER MOBILE OPTIMIZATION UPGRADE */
 /* ===================================== */
 
+/* ===================================== */
+/* TRUE MOBILE FIXED GAUGE SYSTEM */
+/* ===================================== */
+
+/* ===================================== */
+/* CLEAN MOBILE STICKY GAUGE FIX */
+/* ===================================== */
+
 @media (max-width: 768px) {
 
-  /* Reduce hero padding */
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .hero h1 {
-    font-size: 1.9rem;
-  }
-
-  /* Stack layout */
   .meter-layout {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
   }
 
-  /* Make gauge section appear first */
   .meter-right {
-    order: -1;
     position: sticky;
-    top: 70px;
+    top: 80px; /* below navbar */
     z-index: 5;
   }
 
-  /* Compact gauge card */
-  .gauge-card {
-    padding: 20px;
-    border-radius: 16px;
-  }
-
-  /* Smaller gauge */
   .gauge {
     width: 220px;
     height: 110px;
@@ -803,46 +779,4 @@ body::after {
     height: 100px;
   }
 
-  /* Strength text */
-  #strengthText {
-    font-size: 1.4rem;
-  }
-
-  #scoreText {
-    font-size: 0.9rem;
-  }
-
-  /* Emotional message spacing */
-  .impact-message {
-    font-size: 0.8rem;
-    padding: 12px;
-  }
-
-  .comparison-message {
-    font-size: 0.75rem;
-  }
-
-  /* Checklist spacing */
-  .meter-checklist {
-    gap: 12px;
-  }
-
-  .meter-checklist label {
-    padding: 12px;
-  }
-
-  .meter-checklist small {
-    font-size: 0.75rem;
-  }
-
-  /* Upgrade button full width */
-  #upgradeBtn {
-    width: 100%;
-    text-align: center;
-    padding: 14px;
-    font-size: 0.9rem;
-  }
-
 }
-
-
