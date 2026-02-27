@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `You selected: ${packageName} (${packagePrice})`;
 
   function buildWhatsAppLink(layoutName) {
-    return `https://wa.me/27684760534?text=Hi CS Nova,%0A%0AI selected:%0APackage: ${packageName}%0ALayout: ${layoutName}%0ABusiness Name:%0AIndustry:%0AWhen can we begin?`;
+    return `https://wa.me/27635195475?text=Hi CS Nova,%0A%0AI selected:%0APackage: ${packageName}%0ALayout: ${layoutName}%0ABusiness Name:%0AIndustry:%0AWhen can we begin?`;
   }
 
   layout1.href = buildWhatsAppLink("Corporate & Professional");
